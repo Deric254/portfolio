@@ -1,10 +1,12 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
+  background-color: #0D1117;
+  color: #FFFFFF;
 }
 
 .background-wrap {
-  background-color: #dce3ea; /* Outer area slightly darker */
+  background-color: #0D1117;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -15,11 +17,11 @@ body {
 .cv-frame {
   width: 100%;
   max-width: 960px;
-  background-color: #f8f9fb; /* CV area a bit darker but clean */
+  background-color: #161B22;
   padding: 30px;
   border-radius: 20px;
-  border: 2px solid #0077b6;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  border: 2px solid #3B82F6;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
 }
 
 .cv-container {
@@ -45,7 +47,7 @@ body {
 }
 
 .personal-details a {
-  color: #0077b6;
+  color: #3B82F6;
   text-decoration: none;
 }
 
@@ -59,7 +61,7 @@ body {
 
 .toggle-btn {
   width: 100%;
-  background-color: #0077b6;
+  background-color: #3B82F6;
   color: white;
   padding: 15px;
   font-size: 18px;
@@ -73,16 +75,17 @@ body {
 }
 
 .toggle-btn:hover {
-  background-color: #00b4d8;
+  background-color: #60A5FA;
 }
 
 .section-content {
   display: block;
   padding: 15px;
-  background-color: #f1f1f1;
+  background-color: #1E293B;
   margin-top: 5px;
   border-radius: 5px;
   line-height: 1.6;
+  color: #A9B1C7;
 }
 
 .cv-footer {
@@ -91,18 +94,19 @@ body {
 }
 
 .download-btn {
-  background-color: #00b4d8;
+  background-color: #39FF14;
   padding: 12px 24px;
-  color: white;
+  color: #0D1117;
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
   display: inline-block;
   margin-top: 15px;
+  transition: background-color 0.3s ease;
 }
 
 .download-btn:hover {
-  background-color: #0077b6;
+  background-color: #00CC66;
 }
 
 /* Responsive */
@@ -111,6 +115,7 @@ body {
     flex-direction: column;
     text-align: center;
   }
+
   .profile-pic img {
     width: 100px;
     height: 120px;
