@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   background-color: #1E1B2E; /* Deep background */
-  color: #FFFFFF; /* Strong text contrast */
+  color: #FFFFFF; /* Bright white text */
 }
 
 .background-wrap {
@@ -48,13 +48,14 @@ body {
 }
 
 .personal-details a {
-  color: #F4A261; /* Warm gold-orange links */
+  color: #9C89B8; /* Default title color (lavender-purple) */
   font-weight: 500;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .personal-details a:hover {
-  color: #F3722C;
+  color: #219EBC; /* On hover, color changes to blue */
 }
 
 .cv-section {
@@ -77,7 +78,7 @@ body {
 }
 
 .toggle-btn:hover {
-  background-color: #7C6DA5; /* Slightly darker purple */
+  background-color: #219EBC; /* Blue background on hover */
 }
 
 .section-content {
