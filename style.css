@@ -1,12 +1,12 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background-color: #0D1117;
-  color: #FFFFFF;
+  background-color: #1A1523;
+  color: #F8F8FF;
 }
 
 .background-wrap {
-  background-color: #0D1117;
+  background-color: #1A1523;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -17,11 +17,11 @@ body {
 .cv-frame {
   width: 100%;
   max-width: 960px;
-  background-color: #161B22;
+  background-color: #241F36;
   padding: 30px;
   border-radius: 20px;
-  border: 2px solid #3B82F6;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+  border: 2px solid #7F1DFF;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
 }
 
 .cv-container {
@@ -47,12 +47,12 @@ body {
 }
 
 .personal-details a {
-  color: #3B82F6;
+  color: #00FFA3;
   text-decoration: none;
 }
 
 .personal-details a:hover {
-  text-decoration: underline;
+  color: #FF00D4;
 }
 
 .cv-section {
@@ -61,7 +61,7 @@ body {
 
 .toggle-btn {
   width: 100%;
-  background-color: #3B82F6;
+  background-color: #7F1DFF;
   color: white;
   padding: 15px;
   font-size: 18px;
@@ -75,17 +75,17 @@ body {
 }
 
 .toggle-btn:hover {
-  background-color: #60A5FA;
+  background-color: #FF00D4;
 }
 
 .section-content {
   display: block;
   padding: 15px;
-  background-color: #1E293B;
+  background-color: #2E2743;
   margin-top: 5px;
   border-radius: 5px;
   line-height: 1.6;
-  color: #A9B1C7;
+  color: #B5B5C3;
 }
 
 .cv-footer {
@@ -94,9 +94,9 @@ body {
 }
 
 .download-btn {
-  background-color: #39FF14;
+  background-color: #00FFA3;
   padding: 12px 24px;
-  color: #0D1117;
+  color: #1A1523;
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
@@ -106,7 +106,7 @@ body {
 }
 
 .download-btn:hover {
-  background-color: #00CC66;
+  background-color: #FF8A00;
 }
 
 /* Responsive */
