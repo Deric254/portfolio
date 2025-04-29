@@ -1,8 +1,8 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background-color: #1E1B2E;
-  color: #E6E1F5;
+  background-color: #1E1B2E; /* Deep background */
+  color: #FFFFFF; /* Strong text contrast */
 }
 
 .background-wrap {
@@ -17,11 +17,12 @@ body {
 .cv-frame {
   width: 100%;
   max-width: 960px;
-  background-color: #2E294E;
+  background-color: #F3F4F8; /* Light background for content area */
   padding: 30px;
   border-radius: 20px;
-  border: 2px solid #9C89B8;
+  border: 2px solid #9C89B8; /* Purple frame */
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  color: #1E1B2E; /* Dark text inside light frame */
 }
 
 .cv-container {
@@ -47,8 +48,9 @@ body {
 }
 
 .personal-details a {
-  color: #F4A261;
+  color: #F4A261; /* Warm gold-orange links */
   font-weight: 500;
+  text-decoration: none;
 }
 
 .personal-details a:hover {
@@ -61,7 +63,7 @@ body {
 
 .toggle-btn {
   width: 100%;
-  background-color: #9C89B8;
+  background-color: #9C89B8; /* Match frame color */
   color: white;
   padding: 15px;
   font-size: 18px;
@@ -75,17 +77,17 @@ body {
 }
 
 .toggle-btn:hover {
-  background-color: #F3722C;
+  background-color: #7C6DA5; /* Slightly darker purple */
 }
 
 .section-content {
   display: block;
   padding: 15px;
-  background-color: #3E375E;
+  background-color: #E8E9F0; /* Light box for clarity */
   margin-top: 5px;
   border-radius: 5px;
   line-height: 1.6;
-  color: #B8B2CC;
+  color: #1E1B2E; /* Strong text contrast */
 }
 
 .cv-footer {
@@ -107,10 +109,10 @@ body {
 
 .download-btn:hover {
   background-color: #F3722C;
-  color: #1E1B2E;
+  color: #fff;
 }
 
-/* Remove all underlines from links */
+/* Global link style (no underline) */
 a, a:visited, a:hover, a:active {
   text-decoration: none !important;
 }
