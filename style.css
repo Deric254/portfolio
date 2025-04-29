@@ -1,12 +1,12 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background-color: #1A1523; /* Dark plum background */
-  color: #F0EFFF; /* Bright but soft white */
+  background-color: #0D1B2A; /* Deep navy background */
+  color: #E0E1DD; /* Soft light text */
 }
 
 .background-wrap {
-  background-color: #1A1523;
+  background-color: #0D1B2A;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -17,11 +17,11 @@ body {
 .cv-frame {
   width: 100%;
   max-width: 960px;
-  background-color: #241F36; /* Rich plum */
+  background-color: #1B263B; /* Slate blue */
   padding: 30px;
   border-radius: 20px;
-  border: 2px solid #7F1DFF; /* Purple accent */
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
+  border: 2px solid #FFB703; /* Gold accent */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
 }
 
 .cv-container {
@@ -47,13 +47,13 @@ body {
 }
 
 .personal-details a {
-  color: #00FFA3; /* Mint green */
-  text-decoration: none; /* No underline */
+  color: #219EBC; /* Teal accent */
+  text-decoration: none;
   font-weight: 500;
 }
 
 .personal-details a:hover {
-  color: #FF00D4; /* Bright magenta hover */
+  color: #FB8500; /* Bright orange */
 }
 
 .cv-section {
@@ -62,7 +62,7 @@ body {
 
 .toggle-btn {
   width: 100%;
-  background-color: #7F1DFF;
+  background-color: #219EBC;
   color: white;
   padding: 15px;
   font-size: 18px;
@@ -76,17 +76,17 @@ body {
 }
 
 .toggle-btn:hover {
-  background-color: #FF00D4;
+  background-color: #FB8500;
 }
 
 .section-content {
   display: block;
   padding: 15px;
-  background-color: #2E2743; /* Slightly brighter plum */
+  background-color: #243447; /* Darker section */
   margin-top: 5px;
   border-radius: 5px;
   line-height: 1.6;
-  color: #DCD6F7; /* Light lavender for readability */
+  color: #A9B2C3; /* Subtle gray-blue */
 }
 
 .cv-footer {
@@ -95,9 +95,9 @@ body {
 }
 
 .download-btn {
-  background-color: #00FFA3;
+  background-color: #FFB703;
   padding: 12px 24px;
-  color: #1A1523; /* Dark text on light button */
+  color: #0D1B2A;
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
@@ -107,11 +107,16 @@ body {
 }
 
 .download-btn:hover {
-  background-color: #FF8A00; /* Amber hover */
-  color: #1A1523;
+  background-color: #FB8500;
+  color: #0D1B2A;
 }
 
-/* Responsive */
+/* Remove all underlines from links */
+a, a:visited, a:hover, a:active {
+  text-decoration: none !important;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
   .cv-header {
     flex-direction: column;
