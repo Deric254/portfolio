@@ -1,12 +1,12 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background-color: #0D1B2A; /* Deep navy background */
-  color: #E0E1DD; /* Soft light text */
+  background-color: #1E1B2E;
+  color: #E6E1F5;
 }
 
 .background-wrap {
-  background-color: #0D1B2A;
+  background-color: #1E1B2E;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -17,10 +17,10 @@ body {
 .cv-frame {
   width: 100%;
   max-width: 960px;
-  background-color: #1B263B; /* Slate blue */
+  background-color: #2E294E;
   padding: 30px;
   border-radius: 20px;
-  border: 2px solid #FFB703; /* Gold accent */
+  border: 2px solid #9C89B8;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
 }
 
@@ -47,13 +47,12 @@ body {
 }
 
 .personal-details a {
-  color: #219EBC; /* Teal accent */
-  text-decoration: none;
+  color: #F4A261;
   font-weight: 500;
 }
 
 .personal-details a:hover {
-  color: #FB8500; /* Bright orange */
+  color: #F3722C;
 }
 
 .cv-section {
@@ -62,7 +61,7 @@ body {
 
 .toggle-btn {
   width: 100%;
-  background-color: #219EBC;
+  background-color: #9C89B8;
   color: white;
   padding: 15px;
   font-size: 18px;
@@ -76,17 +75,17 @@ body {
 }
 
 .toggle-btn:hover {
-  background-color: #FB8500;
+  background-color: #F3722C;
 }
 
 .section-content {
   display: block;
   padding: 15px;
-  background-color: #243447; /* Darker section */
+  background-color: #3E375E;
   margin-top: 5px;
   border-radius: 5px;
   line-height: 1.6;
-  color: #A9B2C3; /* Subtle gray-blue */
+  color: #B8B2CC;
 }
 
 .cv-footer {
@@ -95,9 +94,9 @@ body {
 }
 
 .download-btn {
-  background-color: #FFB703;
+  background-color: #F4A261;
   padding: 12px 24px;
-  color: #0D1B2A;
+  color: #1E1B2E;
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
@@ -107,8 +106,8 @@ body {
 }
 
 .download-btn:hover {
-  background-color: #FB8500;
-  color: #0D1B2A;
+  background-color: #F3722C;
+  color: #1E1B2E;
 }
 
 /* Remove all underlines from links */
