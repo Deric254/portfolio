@@ -6,6 +6,7 @@ body {
 }
 
 .background-wrap {
+  /*background-color: #def7ec;*/
   background-color: #1E1B2E;
   min-height: 100vh;
   display: flex;
@@ -37,10 +38,13 @@ body {
 }
 
 .profile-pic img {
-  width: 130px;
-  height: 160px;
+  width: 140px;
+  height: 140px;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 50%; /* Strong circular roundness */
+  background-color: #def7ec; /* Matches footer background */
+  padding: 4px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.08);
 }
 
 .personal-details {
@@ -130,84 +134,172 @@ a, a:visited, a:hover, a:active {
     height: 120px;
   }
 }
-/* Footer Alignment Enhancer */
+
+
+/* Footer Gradient Background */
+.cv-footer.connected-footer {
+  background: linear-gradient(to right, #d4f3e4, #e8f8ef);
+  width: 100%;
+  padding: 0;
+}
+
+/* Main Footer Layout */
 .footer-grid {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: flex-start;
   flex-wrap: wrap;
-  gap: 20px;
-  width: 100%;
-  margin-top: 60px;
-  padding-bottom: 20px;
+  padding: 30px 60px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.footer-left {
-  display: flex;
+/* Generic Column Container */
+.footer-col {
   flex: 1;
-  gap: 20px;
-  align-items: center;
-  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
-.footer-right {
-  display: flex;
+/* LEFT: Profile Block Alignment */
+.footer-profile-block {
+  align-items: flex-start;
+  text-align: left;
+}
+
+/* CENTER: Contact Info Alignment */
+.footer-contact-block {
   align-items: center;
-  justify-content: flex-end;
-  gap: 16px;
-  min-width: 220px;
-  flex-shrink: 0;
+  text-align: center;
+}
+
+/* RIGHT: EXES Brand Alignment */
+.footer-exes-block {
+  align-items: flex-end;
   text-align: right;
 }
 
-/* Image Controls - Larger & Stylish */
-.footer-profile {
-  width: 64px;
-  height: 64px;
+/* Shared Profile/Logo Image Styling */
+.footer-profile,
+.footer-exes-logo {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
   object-fit: cover;
-  border-radius: 12px;
-  border: 2px solid #9C89B8;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  padding: 4px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
 }
 
-.exes-logo {
-  width: 60px;
-  height: 60px;
-  object-fit: cover;
-  border-radius: 10px;
-  border: 2px solid #9C89B8;
-  box-shadow: 0 0 6px rgba(156, 137, 184, 0.5);
+/* Name & Title */
+.footer-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #9C89B8;
+  margin-bottom: 4px;
 }
 
-/* Text Styling Enhancements */
-.footer-contact h3 {
-  margin: 0;
+.footer-founder {
+  font-size: 0.85rem;
+  color: #4A4A4A;
+  margin-top: -2px;
+}
+.footer-founder a {
+  color: #9C89B8;
+  text-decoration: none;
+  font-weight: 500;
+}
+.footer-founder a:hover {
+  text-shadow: 0 0 8px #9C89B8;
+  transform: scale(1.03);
+}
+
+/* Glowing EXES Branding */
+.exes-x {
+  font-weight: 800;
+  color: gold;
+  font-size: 1.15em;
+  text-shadow: 1px 1px 2px #b8860b, 0 0 6px gold;
+}
+.exes-link-glow {
+  color: #9C89B8;
+  text-decoration: none;
+  animation: glowPulse 2.5s infinite ease-in-out;
+}
+@keyframes glowPulse {
+  0% { text-shadow: 0 0 3px #9C89B8; }
+  50% { text-shadow: 0 0 12px #9C89B8, 0 0 8px #9C89B8; }
+  100% { text-shadow: 0 0 3px #9C89B8; }
+}
+
+/* Brand Texts */
+.footer-brand-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #9C89B8;
+  margin-bottom: 4px;
+}
+.footer-slogan {
+  font-size: 0.85rem;
+  color: #9C89B8;
+  margin-top: -4px;
+}
+
+/* Contact Info Section */
+.footer-contact-block h3 {
   font-size: 1.2rem;
   color: #9C89B8;
-  font-weight: 600;
+  margin-bottom: 5px;
 }
-
-.footer-contact p {
+.footer-contact-block p {
   margin: 2px 0;
   font-size: 0.95rem;
   color: #1E1B2E;
 }
-
-.footer-contact a.download-btn {
-  margin-top: 8px;
+.download-btn {
+  margin-top: 10px;
   display: inline-block;
   font-size: 0.9rem;
+  color: #333;
+  text-decoration: none;
 }
 
-.exes-brand strong {
-  display: block;
-  font-size: 1.1rem;
-  font-weight: 600;
+/* Social Icons */
+.footer-socials {
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.social-icon i {
+  font-size: 20px;
+  color: #888;
+  transition: 0.3s ease;
+}
+.social-icon:hover i {
   color: #9C89B8;
+  transform: scale(1.2);
 }
 
-.exes-brand small {
-  font-size: 0.85rem;
-  color: #4A4A4A;
-}
+/* Responsive View for Mobile */
+@media (max-width: 768px) {
+  .footer-grid {
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 20px;
+  }
 
+  .footer-col {
+    width: 100%;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .footer-profile-block,
+  .footer-exes-block {
+    align-items: center !important;
+    text-align: center !important;
+  }
+}
